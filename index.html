@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>S5 Average Calculation</title>
+    <!--includes : --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="imgLeft" class="logo left">
+            <img src="assets/logoATMArtboard 5.png" alt="LOGO AtomicCode">
+        </div>
+        <div>
+            <h1>S5 Average Calculation</h1>
+        </div>
+        <div class="logo right">
+            <img src="assets/logoATMArtboard 5.png" alt="LOGO AtomicCode">
+        </div>
+        
+    </header>
+    <section>
+        <form class="flexCenter" onsubmit="return false">
+            <div class="classM">
+                <div class="module">
+                    <h4>Interaction Human Machine</h4>
+                    <div>
+                        <label>TD  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="IHMTD" required>
+                        <label>TP  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="IHMTP" required>
+                        <label>Exam  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="IHMEXAM" required>
+                    </div>
+                </div>
+                <div class="module">
+                    <h4>Compilation</h4>
+                    <div>
+                        <label>TD  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="COMPTD" required>
+                        <label>TP  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="COMPTP" required>
+                        <label>Exam  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="COMPEXAM" required>
+                    </div>
+                </div>
+            </div>
+            <div class="module">    
+                <h4>Software Engineering</h4>
+                <div>
+                    <label>TD  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="GLTD" required>
+                    <label>TP  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="GLTP" required>
+                    <label>Exam  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="GLEXAM" required>
+                </div>
+            </div>
+            <div class="classM">
+                <div class="module">
+                    <h4>Linear Programming</h4>
+                    <div>
+                        <label>TD  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="PLTD" required>
+                        <label>Exam  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="PLEXAM" required>
+                    </div>
+                </div>
+            </div>
+            <div class="classM">
+                <div class="module">
+                    <h4>Operating System 2</h4>
+                    <div>
+                        <label>TD  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="SETD" required>
+                        <label>TP  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="SETP" required>
+                        <label>Exam  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="SEEXAM" required>
+                    </div>
+                </div>
+            </div>
+            <div class="classM">
+                <div class="module">
+                    <h4>Probabilities and statics</h4>
+                    <div>
+                        <label>TD  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="PSTD" required>
+                        <label>Exam  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="PSEXAM" required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="module">
+                <h4>Degital Economy</h4>
+                <div>
+                    <label>Exam  : </label> <input type="number" max="20" min="0" step="0.01" value="0" id="DEEXAM" required>
+                </div>
+            </div>
+            <div>
+                <div class="moyen">
+                    <h3>La moyenne est : <span id="moy">00.00</span> </h3>
+                </div>
+            </div>
+            <button type="submit" id="calcul">Calculer</button>
+        </form>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <section id="contact">
+            <div class="footer">
+                <div class="main">
+                    <div class="list">
+                        <h4>Quick links</h4>
+                        <ul>
+                            <li><a onclick="notYet()">About us</a></li>
+                            <li><a onclick="notYet()">Terms & conditions</a></li>
+                            <li><a onclick="notYet()">New Pl</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="mailto:wadoudbirouk9@gmail.com">Send Mail</a></li>
+                            <li><a onclick="notYet()">Contact on Social media</a></li>
+                            <li><a onclick="notYet()">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Contact info</h4>
+                        <ul>
+                            <li><a>+213 658 73 55 16</a></li>
+                            <li><a href="mailto:wadoudbirouk9@gmail.com">wadoudbirouk@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Connect</h4>
+                        <div class="social">
+                            <a href="https://web.facebook.com/rahim027"><img class="width27" src="assets/contact_icon_facebook.svg" alt=""></a>
+                            <a href="https://github.com/RahimoG"><img class="width27" src="assets/contact_icon_github.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/in/med-abd-rahman-birouk-964969255/"><img class="width27" src="assets/contact_icon_instagram.svg" alt=""></a>
+                            <a href="mailto:wadoudbirouk9@gmail.com"><img class="width27" src="assets/contact_icon_mail.svg" alt=""></a>
+                            <a href="https://www.instagram.com/rahimog.27/?hl=fr"><img class="width27" src="assets/contact_icon_linkedin.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="end-text">
+                <p>
+                    copyright ©2023 All right recived | Made by BIROUK Mohamed Abderrahmane.
+                </p>
+            </div>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
